@@ -664,3 +664,9 @@ form.bg-light button[type="submit"]:hover {
     display: flex !important;
   }
 }
+@media (max-width: 700px) {
+  .contato .mapa {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
