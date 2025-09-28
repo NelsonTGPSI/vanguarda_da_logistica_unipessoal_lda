@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
@@ -50,44 +50,54 @@ Todas as nossas atividades estão devidamente registadas e certificadas</p>
   </section>
 
     <section id="servicos" class="servicos">
-        <video autoplay muted loop playsinline class="servicos-bg-video">
-            <source src="videos/apreseta.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo.
-        </video>
-        <h2>🟦 Serviços</h2>
-        <div class="servico-card">
-            <h3>🚛 Carga e Descarga de Camiões</h3>
-            <ul>
-            <li>Utilização de empilhadores de grande porte para maior eficiência.</li>
-            <li>Equipa treinada para diferentes tipos de mercadorias.</li>
-            <li>Operações rápidas, seguras e adaptadas às necessidades do cliente.</li>
-            </ul>
+    <video autoplay muted loop playsinline class="servicos-bg-video">
+        <source src="videos/apreseta.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+    <h2>🟦 Serviços</h2>
+    <div class="servicos-accordion">
+        <div class="servico-card accordion-item">
+            <button class="accordion-title">🚛 Carga e Descarga de Camiões <span class="accordion-icon">▼</span></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Utilização de empilhadores de grande porte para maior eficiência.</li>
+                    <li>Equipa treinada para diferentes tipos de mercadorias.</li>
+                    <li>Operações rápidas, seguras e adaptadas às necessidades do cliente.</li>
+                </ul>
+            </div>
         </div>
-        <div class="servico-card">
-            <h3>📦 Movimentação e Armazenagem de Mercadorias</h3>
-            <ul>
-            <li>Organização e disposição de paletes em armazéns.</li>
-            <li>Gestão temporária de cargas em zonas de carga/descarga.</li>
-            <li>Apoio logístico em centros de distribuição.</li>
-            </ul>
+        <div class="servico-card accordion-item">
+            <button class="accordion-title">📦 Movimentação e Armazenagem de Mercadorias <span class="accordion-icon">▼</span></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Organização e disposição de paletes em armazéns.</li>
+                    <li>Gestão temporária de cargas em zonas de carga/descarga.</li>
+                    <li>Apoio logístico em centros de distribuição.</li>
+                </ul>
+            </div>
         </div>
-        <div class="servico-card">
-            <h3>🛳️ Manipulação de Contentores Marítimos</h3>
-            <ul>
-            <li>Descarregamento e carregamento de contentores completos (FCL).</li>
-            <li>Reorganização e preparação de cargas para exportação/importação.</li>
-            <li>Movimentação com segurança e cumprimento das normas portuárias.</li>
-            </ul>
+        <div class="servico-card accordion-item">
+            <button class="accordion-title">🛳️ Manipulação de Contentores Marítimos <span class="accordion-icon">▼</span></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Descarregamento e carregamento de contentores completos (FCL).</li>
+                    <li>Reorganização e preparação de cargas para exportação/importação.</li>
+                    <li>Movimentação com segurança e cumprimento das normas portuárias.</li>
+                </ul>
+            </div>
         </div>
-        <div class="servico-card">
-            <h3>🔧 Serviços Personalizados</h3>
-            <ul>
-            <li>Apoio logístico em eventos, obras e projetos industriais.</li>
-            <li>Serviços à medida de empresas que necessitam de movimentação de grandes volumes.</li>
-            <li>Flexibilidade de horários conforme a necessidade do cliente.</li>
-            </ul>
+        <div class="servico-card accordion-item">
+            <button class="accordion-title">🔧 Serviços Personalizados <span class="accordion-icon">▼</span></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Apoio logístico em eventos, obras e projetos industriais.</li>
+                    <li>Serviços à medida de empresas que necessitam de movimentação de grandes volumes.</li>
+                    <li>Flexibilidade de horários conforme a necessidade do cliente.</li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- Nova seção de vantagens -->
     <section id="vantagens" class="vantagens">
     <h2>✅ Vantagens em escolher a Vanguarda da Logística</h2>
@@ -199,8 +209,6 @@ Todas as nossas atividades estão devidamente registadas e certificadas</p>
 </body>
 
 </html>
-
-
 
 
 
