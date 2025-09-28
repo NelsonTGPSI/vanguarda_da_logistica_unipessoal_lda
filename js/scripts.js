@@ -50,3 +50,18 @@ navLinksList.forEach(link => {
     }
   });
 });
+// Accordion dos serviços
+document.querySelectorAll('.accordion-title').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Fecha todos os outros
+    document.querySelectorAll('.accordion-content').forEach(content => {
+      if (content !== btn.nextElementSibling) {
+        content.classList.remove('open');
+        content.previousElementSibling.classList.remove('active');
+      }
+    });
+    // Alterna o atual
+    btn.classList.toggle('active');
+    btn.nextElementSibling.classList.toggle('open');
+  });
+});
